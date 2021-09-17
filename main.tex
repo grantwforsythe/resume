@@ -1,0 +1,279 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+% \lfoot{Last modified: \today}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Grant Forsythe} \\ \vspace{1pt}
+    Math \& Commerce Graduate $\vert$ Hamilton, ON, Canada \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faAt\ \href{mailto:grantwforsythe@gmail.com}{grantwforsythe@gmail.com} ~ \href{https://www.grantwforsythe.com}{\raisebox{-0.2\height}\faGlobe\  grantwforsythe.com} ~ 
+    \href{https://linkedin.com/in/grantwforsythe/}{\raisebox{-0.2\height}\faLinkedin\ grantwforsythe}  ~
+    \href{https://github.com/grantwforsythe}{\raisebox{-0.2\height}\faGithub\ grantwforsythe}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{April 2021}
+      {Bachelor of Science in Mathematics and Statistics}{Hamilton, ON}
+    \resumeSubheading
+      {McMaster University}{April 2019}
+      {Bachelor of Commerce, Minor in Economics}{Hamilton, ON}
+  \resumeSubHeadingListEnd
+\vspace{-15pt} 
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Mathematical Modeling
+                \item Computer Programming
+                \item Regression Analysis
+                \item Data Science
+                \item Linear Algebra
+                \item Multivariable Calculus
+                \item Time Series Analysis
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+\vspace{3pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \cvtag{Python}\cvtag{R}\cvtag{HTML+CSS}\cvtag{JavaScript}\cvtag{C}\cvtag{Bash}\cvtag{\LaTeX}\cvtag{SQL}} \\
+     \textbf{Tools \& Environment}{: \cvtag{Git}\cvtag{Docker}\cvtag{Unix\textbackslash{Linux}}\cvtag{Windows}\cvtag{Vim}\cvtag{VS Code}} \\
+     \textbf{Frameworks \& Databases}{: \cvtag{Flask}\cvtag{MySQL}}}}
+ \end{itemize}
+\vspace{-20pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Personal Tutor}{June 2020 -- Present}
+      {Self-employed}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Privately tutored several students in mathematics, statistics, and Python.} 
+        \resumeItem{Taught concepts such probability, multivariable calculus, financial mathematics, and Object-Oriented-Programming.}
+        % \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        % \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        % \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        % \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fortinos}{October 2014 -- March 2021}
+      {Cashier \textbackslash{ Assistant Front-End Supervisor}}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Proficiently managed store closing procedures and actively trained new employees by displaying preeminent communication skills.}
+        \resumeItem{Exceptional interpersonal and team building skills with an aptitude for building rapport with a diverse range of customers, managers, and colleagues.}
+        \resumeItem{Established a reputation for prompt, efficient service with a high level of accuracy, receiving annual recognition and enhancing customer satisfaction.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Agile Financial Technologies}{June 2016 -- September 2016}
+      {Front End Developer Intern}{Dubai, UAE}
+      \resumeItemListStart
+        \resumeItem{Collected and analyzed public data on more than 200 financial service companies in the Caribbean.}
+        \resumeItem{Summarized data to develop presentations for senior management about prospective leads.}
+        \resumeItem{Conducted an email marketing campaign to thirteen companies leading to several potential clients.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    % \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/grantwforsythe/gym-bot}{\underline{NN Project}}} $|$ \emph{Python, Selenium, Google Cloud Console}}{}
+    %       \resumeItemListStart
+    %       \resumeItem{Developed an automatic bot using \textbf{Python} to register myself for a time slot at my school gym.}
+    %       \resumeItemListEnd
+    %       \vspace{-13pt}
+    % \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/grantwforsythe/gym-bot}{\underline{RSVP}}} $|$ \emph{Python, Selenium, Google Cloud Console}}{}
+    %       \resumeItemListStart
+    %       \resumeItem{Developed an automatic bot using \textbf{Python} to register myself for a time slot at my school gym.}
+    %       \resumeItemListEnd
+    %       \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Gym Reservation Bot} $|$ \cvtag{Python}\cvtag{Selenium}\cvtag{Google Calendar API}\cvtag{Docker}}{\faGithub{\href{https://github.com/grantwforsythe/gym-bot}{ grantwforsythe/gym-bot}}}
+          \resumeItemListStart
+            \resumeItem{Developed a bot that registers for the earliest available time slot at my gym.}
+            \resumeItem{Given a command-line argument, the bot will create an event for the registered session in a Google Calendar.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Personal Website} $|$ \cvtag{HTML}\cvtag{CSS}\cvtag{JavaScript}}{\faGlobe{\href{https://www.grantwforsythe.com}{ grantwforsythe.com}}}
+          \resumeItemListStart
+            \resumeItem{Deployed the static website via GitHub Pages.}
+          \resumeItemListEnd 
+        %   \vspace{-13pt}
+        %   \resumeProjectHeading
+        %   {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+        %   \resumeItemListStart
+        %     \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+        %     \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+        %     \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+        %   \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+%-----------INTERESTS---------------
+\section{Interests}
+    \begin{multicols}{4}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Cinematography
+            \item Philosophy
+            \item Video Games
+            \item Machine Learning\textbackslash{AI}
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+\end{document}
