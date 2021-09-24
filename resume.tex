@@ -1,8 +1,10 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Author : Grant Forsythe
+% Based off of: 
+%	- https://github.com/sb2nov/resume
+%	- https://github.com/jakegut/resume
+%	- https://kevinjycui.github.io/#resume	
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -84,7 +86,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -123,11 +125,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     {\Huge \scshape Grant Forsythe} \\ \vspace{1pt}
     Math \& Commerce Graduate $\vert$ Hamilton, ON, Canada \\ \vspace{1pt}
@@ -141,13 +138,13 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {McMaster University}{April 2021}
-      {Bachelor of Science in Mathematics and Statistics}{Hamilton, ON}
+      {McMaster University}{Hamilton, ON}
+      {Bachelor of Science in Mathematics and Statistics}{Sep. 2019 - Apr. 2021}
     \resumeSubheading
-      {McMaster University}{April 2019}
-      {Bachelor of Commerce, Minor in Economics}{Hamilton, ON}
+      {McMaster University}{Hamilton, ON}
+      {Bachelor of Commerce, Minor in Economics}{Sep. 2015 - Apr. 2019}
   \resumeSubHeadingListEnd
-\vspace{-15pt} 
+\vspace{-13pt} 
 
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
@@ -173,28 +170,25 @@
     \small{\item{
      \textbf{Languages}{: \cvtag{Python}\cvtag{R}\cvtag{HTML+CSS}\cvtag{JavaScript}\cvtag{C}\cvtag{Bash}\cvtag{\LaTeX}\cvtag{SQL}} \\
      \textbf{Tools \& Environment}{: \cvtag{Git}\cvtag{Docker}\cvtag{Unix\textbackslash{Linux}}\cvtag{Windows}\cvtag{Vim}\cvtag{VS Code}} \\
-     \textbf{Frameworks \& Databases}{: \cvtag{Flask}\cvtag{MySQL}}}}
+     \textbf{Frameworks \& Databases}{: \cvtag{Flask}\cvtag{MySQL}} \\
+ 	 \textbf{Libraries}{: \cvtag{pandas}\cvtag{NumPy}\cvtag{Matplotlib}}}}
  \end{itemize}
 \vspace{-20pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
+	
     \resumeSubheading
-      {Personal Tutor}{June 2020 -- Present}
+      {Personal Tutor}{Jun. 2020 -- Present}
       {Self-employed}{Hamilton, ON}
       \resumeItemListStart
         \resumeItem{Privately tutored several students in mathematics, statistics, and Python.} 
-        \resumeItem{Taught concepts as such probability, multivariable calculus, financial mathematics, and Object-Oriented-Programming.}
-        % \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
-        % \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
-        % \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
-        % \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+        \resumeItem{Taught concepts such as probability, multivariable calculus, financial mathematics, and Object-Oriented-Programming.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Assistant Front-End Supervisor}{October 2014 -- March 2021}
+      {Assistant Front-End Supervisor}{Oct. 2014 -- Mar. 2021}
       {Fortinos}{Hamilton, ON}
       \resumeItemListStart
         \resumeItem{Proficiently managed store closing procedures and actively trained new employees by displaying preeminent communication skills.}
@@ -203,7 +197,7 @@
     \resumeItemListEnd
     
     \resumeSubheading
-      {Sales \& Marketing Intern}{June 2016 -- September 2016}
+      {Sales \& Marketing Intern}{Jun. 2016 -- Sep. 2016}
       {Agile Financial Technologies}{Dubai, UAE}
       \resumeItemListStart
         \resumeItem{Collected and analyzed public data on more than 200 financial service companies in the Caribbean.}
@@ -217,34 +211,21 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-    
-%    \resumeProjectHeading
-%    {\textbf{RSVP} $|$ \cvtag{Python}\cvtag{Flask}\cvtag{Bootstrap}\cvtag{OAuth}\cvtag{Heruko}}{\faGithub{\href{https://github.com/grantwforsythe/gym-bot}{ grantwforsythe/gym-bot}}}
-%    \resumeItemListStart
-%	    \resumeItem{Developed a bot that registers for the earliest available time slot at my gym.}
-%	    \resumeItem{Given a command-line argument, the bot will create an event for the registered session in a Google Calendar.}
-%    \resumeItemListEnd
-%    \vspace{-13pt}
+    \vspace{-5pt}
       \resumeProjectHeading
           {\textbf{Gym Reservation Bot} $|$ \cvtag{Python}\cvtag{Selenium}\cvtag{Google Calendar API}\cvtag{Docker}}{\faGithub{\href{https://github.com/grantwforsythe/gym-bot}{ grantwforsythe/gym-bot}}}
           \resumeItemListStart
             \resumeItem{Developed a bot that registers for the earliest available time slot at my gym.}
             \resumeItem{Given a command-line argument, the bot will create an event for the registered session in a Google Calendar.}
-          \resumeItemListEnd
-          \vspace{-13pt}
+      	  \resumeItemListEnd
+      	  \vspace{-15pt}
+      	  
       \resumeProjectHeading
           {\textbf{Personal Website} $|$ \cvtag{HTML}\cvtag{CSS}\cvtag{JavaScript}}{\faGlobe{\href{https://www.grantwforsythe.com}{ grantwforsythe.com}}}
           \resumeItemListStart
             \resumeItem{Deployed the static website via GitHub Pages.}
           \resumeItemListEnd 
-        %   \vspace{-13pt}
-        %   \resumeProjectHeading
-        %   {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
-        %   \resumeItemListStart
-        %     \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
-        %     \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
-        %     \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
-        %   \resumeItemListEnd 
+ 
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 %-----------INVOLVEMENT---------------
